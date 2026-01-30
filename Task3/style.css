@@ -1,0 +1,105 @@
+
+*{
+    margin:0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    /* background-color: rgb(120, 172, 221); */
+    background-image: url("decode.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 3px;
+    background-color: rgb(70, 97, 115);
+}
+
+.main{
+    background-color: rgb(70, 96, 114);
+    color: black;
+    /* margin: auto; */
+    text-align: center;
+    padding: 20px;
+    
+}
+
+nav{
+    padding : 5px;
+    margin: 5px;
+    background-color: rgb(70, 96, 114);
+    color: black;
+    text-align: center;
+    margin:1px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin:5px;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;  
+    /* Helps to Remove Bullet points of list in ul tab */
+
+}
+
+.content{
+    background-color: aliceblue;
+    height: 260px;
+    width: 600px;
+    padding:20px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 3%;
+}
+button{
+    background-color:rgb(70, 96, 114);
+    color: aliceblue;
+    margin: 15px 5px 0 0;
+    padding: 5px 8px;
+    border-radius: 5px;
+
+}
+button:hover{
+    background-color: rgb(67, 65, 65);
+}
+.dark-mode{
+    background-color: #1e1e1e;
+    color:white;
+
+
+}
+
+footer{
+    background-color: rgb(124, 161, 187);
+    text-align: center;
+    padding:10px;
+    margin-top: 30px;
+}
+
+
+
+/* Responsive Design */
+@media(max-width:768px){
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .content{
+        grid-template-columns: 1fr;
+    }
+    h1{
+        font-size: 24px;
+    }
+}
+@media(max-width:480px){
+    body{
+        font-size: 14px;
+    }
+    
+    h1{
+        padding: 20px 10px;
+    }
+}
